@@ -3,5 +3,5 @@
 
 <h1>IOS</h1>
 
-1、ios滚动条滑动卡顿？\n
+1、ios滚动条滑动卡顿？<br/>
   -webkit-overflow-scrolling:touch
