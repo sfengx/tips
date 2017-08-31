@@ -9,11 +9,11 @@
 <h1>Android</h1>
 <h1>手机QQ</h1>
 1、手机QQ分享设置标题、链接等<br/>
-  引入js：//qzonestyle.gtimg.cn/qzone/qzact/common/share/share.js<br/>
-  调用：<br/>
+  引入js：//qzonestyle.gtimg.cn/qzone/qzact/common/share/share.js<br/>
+  调用：<br/>
   setShareInfo({<br/>
-    title:          '此处为标题',<br/>
-    summary:        '此处为摘要',<br/>
+    title:          '此处为标题',<br/>
+    summary:        '此处为摘要',<br/>
     pic:            'http://qzonestyle.gtimg.cn/aoi/sola/20150617094556_OvfOpoRKRB.png',<br/>
     url:            window.location.href<br/>
   });<br/>
