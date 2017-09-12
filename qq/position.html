@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>test</title>
+</head>
+<body>
+<script type="text/javascript" src="http://open.mobile.qq.com/sdk/qqapi.js?_bid=152"></script>
+<script type="text/javascript">
+
+// 定位测试
+window.mqq.debuging = true;
+
+window.mqq.sensor.getLocation({allowCacheTime:60}, function (retCode, latitude, longitude) {
+    alert(3.1)
+    alert('retCode: ' + retCode + ' ' + latitude + ', ' + longitude)
+});
+
+window.mqq.sensor.getLocation(function (retCode, latitude, longitude) {
+    alert(3.2)
+    alert('retCode: ' + retCode + ' ' + latitude + ', ' + longitude)
+});
+
+window.mqq.sensor.getLocation(function (retCode, latitude, longitude) {
+    alert(3.3)
+    alert('retCode: ' + retCode + ' ' + latitude + ', ' + longitude)
+});
+
+window.mqq.invoke("sensor", "getRealLoaction", function (eva) {
+    alert(3.4);
+    alert(JSON.stringify(eva));
+});
+
+window.mqq.invoke("sensor", "vibrate", {'time': 1000});
+
+alert(99);
+
+</script>
+</body>
+</html>

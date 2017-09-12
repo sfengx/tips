@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>test</title>
+</head>
+<body>
+<script charset="utf-8" src="//map.qq.com/api/js?v=2.exp"></script>
+<script type="text/javascript">
+
+// 定位测试
+
+var citylocation = new qq.maps.CityService({
+   complete : function(results){
+        console.log(results);
+        alert(JSON.stringify(results));
+   }
+});
+
+citylocation.searchLocalCity();
+
+console.log(window.qq.maps);
+
+// alert(99);
+
+</script>
+</body>
+</html>
