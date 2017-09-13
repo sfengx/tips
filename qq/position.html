@@ -20,13 +20,8 @@ window.mqq.sensor.getLocation(function (retCode, latitude, longitude) {
     alert('retCode: ' + retCode + ' ' + latitude + ', ' + longitude)
 });
 
-window.mqq.sensor.getLocation(function (retCode, latitude, longitude) {
-    alert(3.3)
-    alert('retCode: ' + retCode + ' ' + latitude + ', ' + longitude)
-});
-
 window.mqq.invoke("sensor", "getRealLoaction", function (eva) {
-    alert(3.4);
+    alert(3.3);
     alert(JSON.stringify(eva));
 });
 
