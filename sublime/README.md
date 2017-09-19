@@ -33,3 +33,7 @@ E36B85CC 84991F19 7575D828 470A92AB
 <h2>2、SideBarEnhancements</h2>
 <p>功能：强化侧边栏</p>
 <p>快捷键：ctrl+b</p>
+<!--  -->
+<h2>3、Emmet</h2>
+<p>功能：速写代码</p>
+<p>文档：<a href="https://docs.emmet.io/" target="_blank"></a></p>
