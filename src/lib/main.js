@@ -1,10 +1,10 @@
-;(function () {
+;
+(function() {
     var list;
     var i;
     var node;
     var timestamp;
-    list = [
-        {
+    list = [{
             name: 'position',
             link: './qq/position.html'
         },
@@ -17,7 +17,7 @@
             link: './qq/share.html'
         }
     ];
-    timestamp =  Math.random().toString().substr(2, 10);
+    timestamp = Math.random().toString().substr(2, 10);
     for (i = 0; i < list.length; i++) {
         node = document.createElement('a');
         node.innerHTML = list[i].name;
