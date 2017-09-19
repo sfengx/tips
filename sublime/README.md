@@ -36,4 +36,4 @@ E36B85CC 84991F19 7575D828 470A92AB
 <!--  -->
 <h2>3、Emmet</h2>
 <p>功能：速写代码</p>
-<p>文档：<a href="https://docs.emmet.io/" target="_blank"></a></p>
+<p>文档：<a href="https://docs.emmet.io/" target="_blank">https://docs.emmet.io</a></p>
