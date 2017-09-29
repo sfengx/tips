@@ -1,20 +1,20 @@
 #安装
 
-  npm install -g nrm
+    npm install -g nrm
 
 #举例
 
 ##列表
 
-  nrm ls
+    nrm ls
 
 ##选择
 
-  nrm use taobao
+    nrm use taobao
 
 ##添加目录
 
-  nrm add  <registry> <url> [home]
+    nrm add  <registry> <url> [home]
 
 ##详细命令
 
