@@ -35,4 +35,5 @@ Usage: nrm [options] [command]
     -h, --help     output usage information
     -V, --version  output the version number
 #附
+
 [原文](https://github.com/Pana/nrm)
