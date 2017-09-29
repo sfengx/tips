@@ -2,21 +2,21 @@
 
     npm install -g nrm
 
-#举例
+# 举例
 
-##列表
+## 列表
 
     nrm ls
 
-##选择
+## 选择
 
     nrm use taobao
 
-##添加目录
+## 添加目录
 
     nrm add  <registry> <url> [home]
 
-##详细命令
+## 详细命令
 
 Usage: nrm [options] [command]
 
@@ -34,6 +34,6 @@ Usage: nrm [options] [command]
 
     -h, --help     output usage information
     -V, --version  output the version number
-#附
+# 附
 
 [原文](https://github.com/Pana/nrm)
