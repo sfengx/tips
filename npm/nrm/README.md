@@ -1,4 +1,4 @@
-#安装
+# 安装
 
     npm install -g nrm
 
