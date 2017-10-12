@@ -1,4 +1,4 @@
-const Express = require('express');//路由
+const Express = require('express'); //路由
 const Sequelize = require('sequelize'); //操作数据库
 
 var app = Express()
@@ -24,21 +24,29 @@ var table = {
     }
   }, {
     freezeTableName: true,
-    timestamps: false,
-    underscoredAll: true
+    timestamps: false
   })
 }
 
 app.get('*', (req, res, next) => {
-    if (req.url === '/1') {
-        table.user.findAll().then(data => {
-            res.send(JSON.stringify(data))
-        });
-    } else if (req.url === '/2') {
-        table.user.create().then(data => {
-          res.send(JSON.stringify({newid: data.null}))
-        })
-    }
+
+  if (req.url === '/1') {
+
+    table.user.findAll().then(data => {
+      res.send(JSON.stringify(data))
+    });
+
+  } else if (req.url === '/2') {
+
+    table.user.create().then(data => {
+      console.log(data);
+      res.send(JSON.stringify({
+        newid: data.null
+      }))
+    })
+
+  }
+
 })
 
 server = app.listen('4000')
