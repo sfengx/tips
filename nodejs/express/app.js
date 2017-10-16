@@ -6,7 +6,7 @@ var app = Express()
 var sequelize = new Sequelize('test', 'root', '168168', {
   host: 'localhost',
   dialect: 'mysql',
-  timezone: '-08:00'
+  timezone: '+08:00'
 });
 
 sequelize.authenticate()

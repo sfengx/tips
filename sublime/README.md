@@ -1,6 +1,5 @@
-<!--  -->
-<h1>许可证</h1>
-<p>
+# 许可证
+
 —– BEGIN LICENSE —–
 TwitterInc
 200 User License
@@ -14,26 +13,35 @@ D5D52613 C3D12E98 BC49967F 7652EED2
 9D2D2E61 67610860 6D338B72 5CF95C69
 E36B85CC 84991F19 7575D828 470A92AB
 —— END LICENSE ——
-</p>
-<!--  -->
-<h1>基础设置</h1>
-<h2>1、快捷键</h2>
-<p>侧边栏：{ "keys": ["ctrl+b"], "command": "toggle_side_bar" }</p>
-<!--  -->
-<h1>插件列表</h1>
-<!--  -->
-<h2>1、TrailingSpaces</h2>
-<p>功能：高亮多余空格</p>
-<!--  -->
-<h2>2、HTML/CSS/JS Prettify</h2>
-<p>功能：代码格式化</p>
-<p>快捷键：ctrl+shift+h</p>
-<p>注：修改HTMLPrettify.sublime-settings配置文件，在"allowed_file_extensions": ["htm", "html", "xhtml", "shtml", "xml", "svg", "md"]加入vue</p>
-<!--  -->
-<h2>2、SideBarEnhancements</h2>
-<p>功能：强化侧边栏</p>
-<p>快捷键：ctrl+b</p>
-<!--  -->
-<h2>3、Emmet</h2>
-<p>功能：速写代码</p>
-<p>文档：<a href="https://docs.emmet.io/" target="_blank">https://docs.emmet.io</a></p>
+
+### 基础设置
+
+#### 1、快捷键<
+
+侧边栏：{ "keys": ["ctrl+b"], "command": "toggle_side_bar" }
+
+### 插件列表
+
+#### 1、TrailingSpaces
+
+  功能：高亮多余空格
+
+#### 2、HTML/CSS/JS Prettify
+
+  功能：代码格式化
+
+  快捷键：ctrl+shift+h
+
+注：修改HTMLPrettify.sublime-settings配置文件，在"allowed_file_extensions": ["htm", "html", "xhtml", "shtml", "xml", "svg", "md"]加入vue
+
+#### 2、SideBarEnhancements
+
+功能：强化侧边栏
+
+快捷键：ctrl+b
+
+### 3、Emmet
+
+功能：速写代码
+
+文档：(https://docs.emmet.io)[https://docs.emmet.io]
