@@ -44,4 +44,4 @@
 
 功能：速写代码
 
-文档：(https://docs.emmet.io)[https://docs.emmet.io]
+文档：[https://docs.emmet.io](https://docs.emmet.io)
