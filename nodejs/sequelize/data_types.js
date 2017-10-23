@@ -12,9 +12,6 @@ Sequelize.FLOAT                       // FLOAT
 Sequelize.FLOAT(11)                   // FLOAT(11)
 Sequelize.FLOAT(11, 12)               // FLOAT(11,12)
 
-Sequelize.REAL                        // REAL        PostgreSQL only.
-Sequelize.REAL(11)                    // REAL(11)    PostgreSQL only.
-Sequelize.REAL(11, 12)                // REAL(11,12) PostgreSQL only.
 
 Sequelize.DOUBLE                      // DOUBLE
 Sequelize.DOUBLE(11)                  // DOUBLE(11)
@@ -29,24 +26,29 @@ Sequelize.DATEONLY                    // DATE without time.
 Sequelize.BOOLEAN                     // TINYINT(1)
 
 Sequelize.ENUM('value 1', 'value 2')  // An ENUM with allowed values 'value 1' and 'value 2'
-Sequelize.ARRAY(Sequelize.TEXT)       // Defines an array. PostgreSQL only.
 
-Sequelize.JSON                        // JSON column. PostgreSQL only.
-Sequelize.JSONB                       // JSONB column. PostgreSQL only.
+// Sequelize.REAL                        // REAL        PostgreSQL only.
+// Sequelize.REAL(11)                    // REAL(11)    PostgreSQL only.
+// Sequelize.REAL(11, 12)                // REAL(11,12) PostgreSQL only.
 
-Sequelize.BLOB                        // BLOB (bytea for PostgreSQL)
-Sequelize.BLOB('tiny')                // TINYBLOB (bytea for PostgreSQL. Other options are medium and long)
+// Sequelize.ARRAY(Sequelize.TEXT)       // Defines an array. PostgreSQL only.
 
-Sequelize.UUID                        // UUID datatype for PostgreSQL and SQLite, CHAR(36) BINARY for MySQL (use defaultValue: Sequelize.UUIDV1 or Sequelize.UUIDV4 to make sequelize generate the ids automatically)
+// Sequelize.JSON                        // JSON column. PostgreSQL only.
+// Sequelize.JSONB                       // JSONB column. PostgreSQL only.
 
-Sequelize.RANGE(Sequelize.INTEGER)    // Defines int4range range. PostgreSQL only.
-Sequelize.RANGE(Sequelize.BIGINT)     // Defined int8range range. PostgreSQL only.
-Sequelize.RANGE(Sequelize.DATE)       // Defines tstzrange range. PostgreSQL only.
-Sequelize.RANGE(Sequelize.DATEONLY)   // Defines daterange range. PostgreSQL only.
-Sequelize.RANGE(Sequelize.DECIMAL)    // Defines numrange range. PostgreSQL only.
+// Sequelize.BLOB                        // BLOB (bytea for PostgreSQL)
+// Sequelize.BLOB('tiny')                // TINYBLOB (bytea for PostgreSQL. Other options are medium and long)
 
-Sequelize.ARRAY(Sequelize.RANGE(Sequelize.DATE)) // Defines array of tstzrange ranges. PostgreSQL only.
+// Sequelize.UUID                        // UUID datatype for PostgreSQL and SQLite, CHAR(36) BINARY for MySQL (use defaultValue: Sequelize.UUIDV1 or Sequelize.UUIDV4 to make sequelize generate the ids automatically)
 
-Sequelize.GEOMETRY                    // Spatial column.  PostgreSQL (with PostGIS) or MySQL only.
-Sequelize.GEOMETRY('POINT')           // Spatial column with geometry type. PostgreSQL (with PostGIS) or MySQL only.
-Sequelize.GEOMETRY('POINT', 4326)     // Spatial column with geometry type and SRID.  PostgreSQL (with PostGIS) or MySQL only.
+// Sequelize.RANGE(Sequelize.INTEGER)    // Defines int4range range. PostgreSQL only.
+// Sequelize.RANGE(Sequelize.BIGINT)     // Defined int8range range. PostgreSQL only.
+// Sequelize.RANGE(Sequelize.DATE)       // Defines tstzrange range. PostgreSQL only.
+// Sequelize.RANGE(Sequelize.DATEONLY)   // Defines daterange range. PostgreSQL only.
+// Sequelize.RANGE(Sequelize.DECIMAL)    // Defines numrange range. PostgreSQL only.
+
+// Sequelize.ARRAY(Sequelize.RANGE(Sequelize.DATE)) // Defines array of tstzrange ranges. PostgreSQL only.
+
+// Sequelize.GEOMETRY                    // Spatial column.  PostgreSQL (with PostGIS) or MySQL only.
+// Sequelize.GEOMETRY('POINT')           // Spatial column with geometry type. PostgreSQL (with PostGIS) or MySQL only.
+// Sequelize.GEOMETRY('POINT', 4326)     // Spatial column with geometry type and SRID.  PostgreSQL (with PostGIS) or MySQL only.
