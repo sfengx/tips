@@ -18,6 +18,8 @@
 
 #### 1、快捷键<
 
+按 Ctrl-Cmd-G (Win: Alt-F3) : 自动选取所有同名同类
+
 侧边栏：{ "keys": ["ctrl+b"], "command": "toggle_side_bar" }
 
 ### 插件列表

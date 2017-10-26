@@ -6,7 +6,11 @@ var app = Express()
 var sequelize = new Sequelize('test', 'root', '168168', {
   host: 'localhost',
   dialect: 'mysql',
-  timezone: '+08:00'
+  timezone: '+08:00',
+  'define': {
+    // 字段以下划线（_）来分割（默认是驼峰命名风格）
+    'underscored': true
+  }
 });
 
 sequelize.authenticate()
@@ -24,7 +28,7 @@ var table = {
     }
   }, {
     freezeTableName: true,
-    timestamps: false
+    timestamps: true,
   })
 }
 
