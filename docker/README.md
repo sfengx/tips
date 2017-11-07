@@ -33,4 +33,17 @@
 
     docker rmi $(docker images | grep "^<none>" | awk "{print $3}")
 
-[https://hub.docker.com](ttps://hub.docker.com)
+#### 查看环境配置文件
+
+    $ systemctl show docker | grep EnvironmentFile
+    EnvironmentFile=-/etc/sysconfig/docker (ignore_errors=yes)
+
+#### 查看服务启动文件位置：
+
+    $ systemctl show --property=FragmentPath docker
+    FragmentPath=/usr/lib/systemd/system/docker.service
+
+    $ grep EnvironmentFile /usr/lib/systemd/system/docker.service
+    EnvironmentFile=-/etc/sysconfig/docker
+
+[https://hub.docker.com](https://hub.docker.com)
