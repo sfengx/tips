@@ -26,7 +26,7 @@
 
     vi /usr/lib/systemd/system/docker.service
 
-    在此文件中，以ExecStart=开头编辑[Service]部分中的行。 将“ -H tcp://0.0.0.0:4243 ”添加到该行。
+    在此文件中，以ExecStart=开头编辑[Service]部分中的行。 将“ -H tcp://0.0.0.0:4243 -H unix:///var/run/docker.sock”添加到该行。
 
 
 #### 删除所有<none>镜像
