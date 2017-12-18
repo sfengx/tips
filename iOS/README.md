@@ -9,3 +9,7 @@
 ### iphoneX的fixed不到底？
 
     <meta name="viewport" content="viewport-fit=cover"/>
+
+### 判断是否iphoneX
+
+    /iphone/gi.test(navigator.userAgent) && (screen.height == 812 && screen.width == 375)
