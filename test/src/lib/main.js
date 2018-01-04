@@ -6,15 +6,15 @@
     var timestamp;
     list = [{
             name: 'position',
-            link: './qq/position.html'
+            link: '../qq/position.html'
         },
         {
             name: 'position-map',
-            link: './qq/position2.html'
+            link: '../qq/position2.html'
         },
         {
             name: 'share',
-            link: './qq/share.html'
+            link: '../qq/share.html'
         }
     ];
     timestamp = Math.random().toString().substr(2, 10);
