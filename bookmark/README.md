@@ -1,3 +1,3 @@
 # 技术文档索引
 
-### mac截图[GO](http://www.ifanr.com/app/546621)
+### Mac截图 [go](http://www.ifanr.com/app/546621)
