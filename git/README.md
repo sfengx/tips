@@ -9,17 +9,11 @@
     . $(brew --prefix)/etc/bash_completion
     fi
 
-
-    for branch in `git branch -a | grep remotes | grep -v HEAD | grep -v master`; do
-
-    git push origin2 ${branch##*/}
-
-    done
-
-
-
-    for branch in `git branch -a | grep remotes | grep -v HEAD | grep -v master`; do
-
+### 批量拉取推送分支
+for branch in `git branch -a | grep remotes | grep -v HEAD`; do
     git branch --track ${branch##*/} $branch
+done
 
-    done
+for branch in `git branch -a | grep remotes | grep -v HEAD`; do
+    git push origin2 ${branch##*/}:${branch##*/}
+done
