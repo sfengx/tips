@@ -1,6 +1,10 @@
 ### iOS在滚动时fixed需要touchend才生效?
 
     transform: translate3d(0,0,0);
+    
+### iOS两次点击才触发
+
+    添加一个空的touchstart事件
 
 ### iOS滚动条滑动卡顿？
 
